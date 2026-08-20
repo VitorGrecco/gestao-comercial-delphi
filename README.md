@@ -1,4 +1,4 @@
-\# Gestão Comercial Web
+\# Gestão Comercial Desktop
 
 
 
@@ -12,7 +12,7 @@ Sistema de gestão comercial web desenvolvido em Delphi utilizando uniGUI e SQL 
 
 \- Delphi
 
-\- uniGUI
+\- VCL
 
 \- SQL Server
 
