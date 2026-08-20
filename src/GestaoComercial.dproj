@@ -123,9 +123,14 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="uPrincipal.pas">
+        <DCCReference Include="Forms\uPrincipal.pas">
             <Form>FrmPrincipal</Form>
             <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="DataModules\uDMConexao.pas">
+            <Form>dmConexao</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
