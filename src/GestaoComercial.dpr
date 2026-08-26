@@ -6,7 +6,8 @@ uses
   uPrincipal in 'Forms\uPrincipal.pas' {FrmPrincipal},
   uDMConexao in 'DataModules\uDMConexao.pas' {dmConexao: TDataModule},
   uLogin in 'Forms\uLogin.pas' {frmLogin},
-  uUsuarioRepository in 'Repositories\uUsuarioRepository.pas';
+  uUsuarioRepository in 'Repositories\uUsuarioRepository.pas',
+  uSenhaHelper in 'Utils\uSenhaHelper.pas';
 
 {$R *.res}
 

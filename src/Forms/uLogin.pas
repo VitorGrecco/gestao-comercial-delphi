@@ -33,7 +33,8 @@ implementation
 
 uses
   uDMConexao,
-  uUsuarioRepository;
+  uUsuarioRepository,
+  uSenhaHelper;
 
 {$R *.dfm}
 
@@ -66,7 +67,15 @@ begin
       Exit;
     end;
 
-    ShowMessage('Usuário encontrado com sucesso.');
+    if GerarHash(edtSenha.Text) <> senhaHash then
+    begin
+      ShowMessage('Senha inválida.');
+      edtSenha.Clear;
+      edtSenha.SetFocus;
+      Exit;
+    end;
+
+    ModalResult := mrOk;
   finally
     usuarioRepository.Free;
   end;

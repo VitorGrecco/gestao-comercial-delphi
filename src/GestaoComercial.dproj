@@ -137,6 +137,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Repositories\uUsuarioRepository.pas"/>
+        <DCCReference Include="Utils\uSenhaHelper.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
