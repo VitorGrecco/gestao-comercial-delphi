@@ -138,6 +138,10 @@
         </DCCReference>
         <DCCReference Include="Repositories\uUsuarioRepository.pas"/>
         <DCCReference Include="Utils\uSenhaHelper.pas"/>
+        <DCCReference Include="Forms\uUsuarios.pas">
+            <Form>frmUsuarios</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

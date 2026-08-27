@@ -7,7 +7,8 @@ uses
   uDMConexao in 'DataModules\uDMConexao.pas' {dmConexao: TDataModule},
   uLogin in 'Forms\uLogin.pas' {frmLogin},
   uUsuarioRepository in 'Repositories\uUsuarioRepository.pas',
-  uSenhaHelper in 'Utils\uSenhaHelper.pas';
+  uSenhaHelper in 'Utils\uSenhaHelper.pas',
+  uUsuarios in 'Forms\uUsuarios.pas' {frmUsuarios};
 
 {$R *.res}
 

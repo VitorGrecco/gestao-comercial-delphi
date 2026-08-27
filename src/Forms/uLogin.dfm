@@ -12,7 +12,9 @@ object frmLogin: TfrmLogin
   Font.Height = -13
   Font.Name = 'Segoe UI'
   Font.Style = []
+  KeyPreview = True
   Position = poScreenCenter
+  OnKeyDown = FormKeyDown
   TextHeight = 17
   object pnlEsquerdo: TPanel
     Left = 0
@@ -155,6 +157,7 @@ object frmLogin: TfrmLogin
       ParentBackground = False
       ParentFont = False
       TabOrder = 2
+      TabStop = True
       OnClick = pnlEntrarClick
     end
   end

@@ -13,9 +13,12 @@ type
     constructor Create(AConnection: TADOConnection);
 
     function BuscarHashPorLogin(ALogin: string; out ASenhaHash: string): Boolean;
+
+    procedure ListarUsuarios(AQuery: TADOQuery);
   end;
 
 implementation
+
   constructor TUsuarioRepository.Create(AConnection: TADOConnection);
   begin
     FConnection := AConnection;
@@ -44,6 +47,16 @@ implementation
     finally
       qryUsuario.Free;
     end;
+  end;
+
+  procedure TUsuarioRepository.ListarUsuarios(AQuery: TADOQuery);
+  begin
+    AQuery.Close;
+    AQuery.Connection := FConnection;
+
+    AQuery.SQL.Text := 'SELECT ID_USUARIO, NOME, LOGIN, ATIVO, CASE WHEN ATIVO = 1 THEN ''Sim'' ELSE ''Não'' END AS ATIVO_DESC, ' +
+                       'DTH_CADASTRO FROM USUARIO ORDER BY NOME';
+    AQuery.Open;
   end;
 
 end.

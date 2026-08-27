@@ -20,6 +20,7 @@ type
     shpLinhaSenha: TShape;
     pnlEntrar: TPanel;
     procedure pnlEntrarClick(Sender: TObject);
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
   private
     { Private declarations }
   public
@@ -37,6 +38,16 @@ uses
   uSenhaHelper;
 
 {$R *.dfm}
+
+procedure TfrmLogin.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  if Key = VK_RETURN then
+  begin
+    pnlEntrarClick(pnlEntrar);
+    Key := 0;
+  end;
+end;
 
 procedure TfrmLogin.pnlEntrarClick(Sender: TObject);
 var
