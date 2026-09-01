@@ -14,6 +14,7 @@ object frmUsuarios: TfrmUsuarios
   Position = poScreenCenter
   OnCreate = FormCreate
   OnDestroy = FormDestroy
+  OnResize = FormResize
   TextHeight = 15
   object pnlCabecalho: TPanel
     Left = 0
@@ -46,14 +47,42 @@ object frmUsuarios: TfrmUsuarios
       Caption = 'Gerencie os usu'#225'rios que tem acesso ao sistema'
     end
     object pnlNovo: TPanel
-      Left = 489
+      Left = 333
       Top = 20
-      Width = 130
+      Width = 140
       Height = 38
       Cursor = crHandPoint
       BevelOuter = bvNone
       Caption = '+ Novo usu'#225'rio'
+      Color = 3877150
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -12
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
       TabOrder = 0
+      OnClick = pnlNovoClick
+    end
+    object pnlEditar: TPanel
+      Left = 480
+      Top = 20
+      Width = 140
+      Height = 38
+      Cursor = crHandPoint
+      BevelOuter = bvNone
+      Caption = 'Editar usu'#225'rio'
+      Color = 3877150
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -12
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 1
+      OnClick = pnlEditarClick
     end
   end
   object pnlLista: TPanel
@@ -66,10 +95,6 @@ object frmUsuarios: TfrmUsuarios
     Color = clWhite
     ParentBackground = False
     TabOrder = 1
-    ExplicitLeft = 248
-    ExplicitTop = 328
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object grdUsuarios: TDBGrid
       Left = 0
       Top = 0
@@ -77,6 +102,7 @@ object frmUsuarios: TfrmUsuarios
       Height = 331
       Align = alClient
       DataSource = dsUsuarios
+      Options = [dgTitles, dgIndicator, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
       TabOrder = 0
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
@@ -115,7 +141,7 @@ object frmUsuarios: TfrmUsuarios
     end
   end
   object dsUsuarios: TDataSource
-    Left = 368
-    Top = 8
+    Left = 8
+    Top = 160
   end
 end
