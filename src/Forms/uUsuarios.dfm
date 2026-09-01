@@ -3,8 +3,8 @@ object frmUsuarios: TfrmUsuarios
   Top = 0
   BorderStyle = bsSingle
   Caption = 'Usu'#225'rios'
-  ClientHeight = 441
-  ClientWidth = 624
+  ClientHeight = 935
+  ClientWidth = 1710
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -19,13 +19,15 @@ object frmUsuarios: TfrmUsuarios
   object pnlCabecalho: TPanel
     Left = 0
     Top = 0
-    Width = 624
+    Width = 1710
     Height = 110
     Align = alTop
     BevelOuter = bvNone
     Color = clWhite
     ParentBackground = False
     TabOrder = 0
+    ExplicitLeft = 208
+    ExplicitTop = 64
     object lblTitulo: TLabel
       Left = 25
       Top = 20
@@ -46,60 +48,33 @@ object frmUsuarios: TfrmUsuarios
       Height = 15
       Caption = 'Gerencie os usu'#225'rios que tem acesso ao sistema'
     end
-    object pnlNovo: TPanel
-      Left = 333
-      Top = 20
+    object btnNovo: TButton
+      Left = 392
+      Top = 37
       Width = 140
       Height = 38
-      Cursor = crHandPoint
-      BevelOuter = bvNone
       Caption = '+ Novo usu'#225'rio'
-      Color = 3877150
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Height = -12
-      Font.Name = 'Segoe UI'
-      Font.Style = []
-      ParentBackground = False
-      ParentFont = False
       TabOrder = 0
       OnClick = pnlNovoClick
-    end
-    object pnlEditar: TPanel
-      Left = 480
-      Top = 20
-      Width = 140
-      Height = 38
-      Cursor = crHandPoint
-      BevelOuter = bvNone
-      Caption = 'Editar usu'#225'rio'
-      Color = 3877150
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Height = -12
-      Font.Name = 'Segoe UI'
-      Font.Style = []
-      ParentBackground = False
-      ParentFont = False
-      TabOrder = 1
-      OnClick = pnlEditarClick
     end
   end
   object pnlLista: TPanel
     Left = 0
     Top = 110
-    Width = 624
-    Height = 331
+    Width = 1710
+    Height = 825
     Align = alClient
     BevelOuter = bvNone
     Color = clWhite
     ParentBackground = False
     TabOrder = 1
+    ExplicitWidth = 624
+    ExplicitHeight = 331
     object grdUsuarios: TDBGrid
       Left = 0
       Top = 0
-      Width = 624
-      Height = 331
+      Width = 1710
+      Height = 825
       Align = alClient
       DataSource = dsUsuarios
       Options = [dgTitles, dgIndicator, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
@@ -139,6 +114,15 @@ object frmUsuarios: TfrmUsuarios
           Visible = True
         end>
     end
+  end
+  object btnEditar: TButton
+    Left = 538
+    Top = 37
+    Width = 140
+    Height = 38
+    Caption = 'Editar usu'#225'rio'
+    TabOrder = 2
+    OnClick = pnlEditarClick
   end
   object dsUsuarios: TDataSource
     Left = 8

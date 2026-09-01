@@ -2,8 +2,8 @@ object FrmPrincipal: TFrmPrincipal
   Left = 0
   Top = 0
   Caption = 'Gest'#227'o Comercial'
-  ClientHeight = 700
-  ClientWidth = 1200
+  ClientHeight = 1000
+  ClientWidth = 1900
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,46 +16,52 @@ object FrmPrincipal: TFrmPrincipal
   object pnlAreaPrincipal: TPanel
     Left = 220
     Top = 0
-    Width = 980
-    Height = 700
+    Width = 1680
+    Height = 1000
     Align = alClient
     BevelOuter = bvNone
     Color = clWhite
     ParentBackground = False
     TabOrder = 1
+    ExplicitWidth = 980
+    ExplicitHeight = 700
     object pnlTopo: TPanel
       Left = 0
       Top = 0
-      Width = 980
+      Width = 1680
       Height = 65
       Align = alTop
       BevelOuter = bvNone
       Color = clWhite
       ParentBackground = False
       TabOrder = 0
+      ExplicitWidth = 980
     end
     object pnlConteudo: TPanel
       Left = 0
       Top = 65
-      Width = 980
-      Height = 635
+      Width = 1680
+      Height = 935
       Align = alClient
       BevelOuter = bvNone
       Color = 15329769
       ParentBackground = False
       TabOrder = 1
+      ExplicitWidth = 980
+      ExplicitHeight = 635
     end
   end
   object pnlMenu: TPanel
     Left = 0
     Top = 0
     Width = 220
-    Height = 700
+    Height = 1000
     Align = alLeft
     BevelOuter = bvNone
     Color = 3877150
     ParentBackground = False
     TabOrder = 0
+    ExplicitHeight = 700
     object pnlLogo: TPanel
       Left = 0
       Top = 0

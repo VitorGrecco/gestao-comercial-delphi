@@ -3,8 +3,8 @@ object frmUsuarioCadastro: TfrmUsuarioCadastro
   Top = 0
   BorderStyle = bsDialog
   Caption = 'Novo Usu'#225'rio'
-  ClientHeight = 360
-  ClientWidth = 500
+  ClientHeight = 230
+  ClientWidth = 334
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -74,8 +74,8 @@ object frmUsuarioCadastro: TfrmUsuarioCadastro
     TabOrder = 3
   end
   object btnCancelar: TButton
-    Left = 17
-    Top = 192
+    Left = 157
+    Top = 183
     Width = 75
     Height = 25
     Cancel = True
@@ -85,12 +85,21 @@ object frmUsuarioCadastro: TfrmUsuarioCadastro
   end
   object btnSalvar: TButton
     Left = 238
-    Top = 192
+    Top = 183
     Width = 75
     Height = 25
     Caption = 'Salvar'
     Default = True
     TabOrder = 5
     OnClick = btnSalvarClick
+  end
+  object btnAlterarSenha: TButton
+    Left = 17
+    Top = 183
+    Width = 75
+    Height = 25
+    Caption = 'Alterar Senha'
+    TabOrder = 6
+    Visible = False
   end
 end

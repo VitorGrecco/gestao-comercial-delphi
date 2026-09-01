@@ -10,13 +10,13 @@ uses
 type
   TfrmUsuarios = class(TForm)
     lblTitulo: TLabel;
-    pnlNovo: TPanel;
     grdUsuarios: TDBGrid;
     dsUsuarios: TDataSource;
     pnlCabecalho: TPanel;
     lblSubtitulo: TLabel;
     pnlLista: TPanel;
-    pnlEditar: TPanel;
+    btnNovo: TButton;
+    btnEditar: TButton;
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure pnlNovoClick(Sender: TObject);

@@ -18,6 +18,7 @@ type
     chkAtivo: TCheckBox;
     btnCancelar: TButton;
     btnSalvar: TButton;
+    btnAlterarSenha: TButton;
     procedure btnSalvarClick(Sender: TObject);
   private
     { Private declarations }
@@ -101,6 +102,7 @@ begin
 
     lblSenha.Visible := False;
     edtSenha.Visible := False;
+    btnAlterarSenha.Visible := True;
 
     Caption := 'Editar usuário';
     lblTitulo.Caption := 'Editar usuário';
