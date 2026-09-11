@@ -26,8 +26,6 @@ object frmUsuarios: TfrmUsuarios
     Color = clWhite
     ParentBackground = False
     TabOrder = 0
-    ExplicitLeft = 208
-    ExplicitTop = 64
     object lblTitulo: TLabel
       Left = 25
       Top = 20
@@ -49,7 +47,7 @@ object frmUsuarios: TfrmUsuarios
       Caption = 'Gerencie os usu'#225'rios que tem acesso ao sistema'
     end
     object btnNovo: TButton
-      Left = 392
+      Left = 1394
       Top = 37
       Width = 140
       Height = 38
@@ -68,8 +66,6 @@ object frmUsuarios: TfrmUsuarios
     Color = clWhite
     ParentBackground = False
     TabOrder = 1
-    ExplicitWidth = 624
-    ExplicitHeight = 331
     object grdUsuarios: TDBGrid
       Left = 0
       Top = 0
@@ -116,7 +112,7 @@ object frmUsuarios: TfrmUsuarios
     end
   end
   object btnEditar: TButton
-    Left = 538
+    Left = 1539
     Top = 37
     Width = 140
     Height = 38

@@ -9,7 +9,10 @@ uses
   uUsuarioRepository in 'Repositories\uUsuarioRepository.pas',
   uSenhaHelper in 'Utils\uSenhaHelper.pas',
   uUsuarios in 'Forms\uUsuarios.pas' {frmUsuarios},
-  uUsuarioCadastro in 'Forms\uUsuarioCadastro.pas' {frmUsuarioCadastro};
+  uUsuarioCadastro in 'Forms\uUsuarioCadastro.pas' {frmUsuarioCadastro},
+  uClientes in 'Forms\uClientes.pas' {frmClientes},
+  uClienteCadastro in 'Forms\uClienteCadastro.pas' {frmClienteCadastro},
+  uClienteRepository in 'Repositories\uClienteRepository.pas';
 
 {$R *.res}
 
